@@ -1,0 +1,22 @@
+# Find the service which makes it possible to run specific tasks following a regular
+# schedule
+
+# The cron utility is launched by launchd(8) when it sees the existence of /etc/crontab or files in
+#     /usr/lib/cron/tabs.  There should be no need to start it manually.  See
+#     /System/Library/LaunchDaemons/com.vix.cron.plist for details.
+
+#    The cron utility searches /usr/lib/cron/tabs for crontab files which are named after accounts in
+#     /etc/passwd; crontabs found are loaded into memory.  The cron utility also searches for /etc/crontab which
+#     is in a different format (see crontab(5)).
+
+#     The cron utility then wakes up every minute, examining all stored crontabs, checking each command to see
+#     if it should be run in the current minute.  When executing commands, any output is mailed to the owner of
+#    the crontab (or to the user named in the MAILTO environment variable in the crontab, if such exists).
+
+#     Additionally, cron checks each minute to see if its spool directory's modification time (or the modifica-
+#     tion time on /etc/crontab) has changed, and if it has, cron will then examine the modification time on all
+#     crontabs and reload those which have changed.  Thus cron need not be restarted whenever a crontab file is
+#     modified.  Note that the crontab(1) command updates the modification time of the spool directory whenever
+#     it changes a crontab.
+
+cron

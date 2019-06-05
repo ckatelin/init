@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Write a script which delete an ACTIVE user on the VM.
+
+USR = who
+
+sudo kill -u $(USR)
+sudo userdel $(USR)
