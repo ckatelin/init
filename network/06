@@ -1,0 +1,7 @@
+
+#Get the complete path of the file that contains the IP address of the DNS server
+#you’re using
+
+echo /etc/resolv.conf
+nslookup 21-school.ru | grep -w Server | awk '{print $2}'
+echo 192.168.50.2

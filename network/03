@@ -1,0 +1,3 @@
+# Identify the MAC address of the Wi-Fi card
+
+ifconfig en1 | grep -w ether | cut -c 8-

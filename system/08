@@ -1,0 +1,7 @@
+# What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+# The private key.
+# ~/.ssh/id_rsa 
+
+# The public key 
+# ~/.ssh/authorized_keys

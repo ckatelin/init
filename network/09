@@ -1,0 +1,7 @@
+# Find the external IP of 42.fr
+
+# nslookup 42.fr
+
+echo 163.172.250.11
+echo 163.172.250.13
+echo 163.172.250.12

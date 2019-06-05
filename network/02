@@ -1,0 +1,7 @@
+# Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+# (b) Identify all IP adresses which are part of the same subnet
+
+ifconfig -a | grep -w broadcast | cut -c 51-
+ping -c 1 192.168.23.255
+arp -a | awk '{print$2}' | cut -f 1 -d ')' | cut -c 2-
